@@ -1,1 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+
+:root {
+  --color-primary: #006566;
+  --color-primary-hover: #005455;
+  --color-primary-light: #e6f2f2;
+  --color-primary-subtle: #f0f8f8;
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-bg: #F9FAFB;
+  --color-white: #ffffff;
+  --color-dark: #0a1a1a;
+  --color-dark-card: #112020;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.05);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Inter Fallback', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* ---- Responsive overrides for inline-styled layouts ---- */
+
+/* Navbar: hide desktop nav links under 768px, keep logo + CTA */
+@media (max-width: 880px) {
+  .nav-links { display: none !important; }
+}
+
+/* Hero trust badges: stack on narrow screens */
+@media (max-width: 768px) {
+  .hero-trust-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-content {
+    padding-bottom: 40px !important;
+  }
+  .hero-trust-strip {
+    position: static !important;
+    margin-top: 24px;
+  }
+}
+
+/* Stats strip: 2 columns on tablet, 1 on mobile */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Footer: collapse to 2 columns then 1 */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px !important;
+  }
+}
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+/* Hero h1 clamp is already fluid via clamp(); tighten section padding on mobile */
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ctas {
+    flex-direction: column;
+  }
+  .hero-ctas a {
+    width: 100%;
+    justify-content: center;
+  }
+}
