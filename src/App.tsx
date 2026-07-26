@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import TrustMarquee from './components/TrustMarquee'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <TrustMarquee />
         <Testimonials />
         <FAQ />
         <CTA />

@@ -113,6 +113,39 @@ export default function Services() {
             <ServiceCard key={service.title} {...service} />
           ))}
         </div>
+
+        {/* CTA button */}
+        <div style={{ textAlign: 'center', marginTop: '48px' }}>
+          <a
+            href="#contact"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '13px 28px',
+              borderRadius: 'var(--radius-sm)',
+              border: '1.5px solid var(--color-primary)',
+              color: 'var(--color-primary)',
+              fontSize: '15px',
+              fontWeight: 600,
+              textDecoration: 'none',
+              transition: 'background-color 0.18s ease, color 0.18s ease',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--color-primary)';
+              (e.currentTarget as HTMLAnchorElement).style.color = '#ffffff';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'transparent';
+              (e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-primary)';
+            }}
+          >
+            Vezi toate serviciile
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );
