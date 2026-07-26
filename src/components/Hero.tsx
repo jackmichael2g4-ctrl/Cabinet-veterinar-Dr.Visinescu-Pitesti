@@ -127,12 +127,14 @@ export default function Hero() {
               marginBottom: '20px',
             }}
           >
-            Dr. Vișinescu —{' '}
-            <span style={{ color: '#4dd9d9' }}>
-              Clinica veterinară
-            </span>{' '}
-            in Pitești
-          </h1>
+              Dr. Vișinescu -
+  <span className="block">
+    <span style={{ color: '#4dd9d9' }}>
+      Clinica veterinară
+    </span>{' '}
+    în Pitești
+  </span>
+</h1>
 
           {/* Subheading */}
           <p
@@ -146,7 +148,7 @@ export default function Hero() {
             }}
           >
             Îngrijire veterinară de calitate pentru animalul tău de companie,
-            într-un mediu modern și prietenos. Servicii complete — cabinet și
+            într-un mediu modern și prietenos. <br />Servicii complete — cabinet și
             farmacie veterinară.
           </p>
 
