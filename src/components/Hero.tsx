@@ -81,7 +81,7 @@ export default function Hero() {
         }}
         className="hero-content"
       >
-        <div style={{ maxWidth: '620px' }}>
+        <div style={{ maxWidth: '720px' }}>
           {/* Badge */}
           <div
             style={{
@@ -119,11 +119,11 @@ export default function Hero() {
           {/* Heading */}
           <h1
             style={{
-              fontSize: 'clamp(36px, 5vw, 56px)',
+              fontSize: 'clamp(36px, 5vw, 54px)',
               fontWeight: 800,
               color: '#ffffff',
               lineHeight: 1.1,
-              letterSpacing: '-0.02em',
+              letterSpacing: '-0.025em',
               marginBottom: '20px',
             }}
           >
@@ -142,7 +142,7 @@ export default function Hero() {
               color: 'rgba(255,255,255,0.72)',
               lineHeight: 1.65,
               marginBottom: '36px',
-              maxWidth: '520px',
+              maxWidth: '580px',
             }}
           >
             Îngrijire veterinară de calitate pentru animalul tău de companie,
