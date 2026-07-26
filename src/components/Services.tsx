@@ -20,7 +20,7 @@ const services = [
     description:
       'Prevenție esențială prin vaccinări conform schemelor recomandate și înregistrare oficială în RECS.',
     image:
-      'public/vaccinare.png',
+      'public/vaccinari.png',
     imageAlt: 'Vaccinare câine la cabinet veterinar',
   },
   {
