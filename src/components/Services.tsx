@@ -4,7 +4,7 @@ const services = [
     description:
       'Evaluare generală completă, diagnostic clinic precis și planuri de tratament personalizate pentru animalul tău.',
     image:
-      'https://images.pexels.com/photos/6235233/pexels-photo-6235233.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/consultatii_diagnostic.png',
     imageAlt: 'Medic veterinar consultând un câine',
   },
   {
@@ -12,7 +12,7 @@ const services = [
     description:
       'Intervenții chirurgicale de la sterilizări de rutină la proceduri complexe, realizate în condiții optime.',
     image:
-      'https://images.pexels.com/photos/6235010/pexels-photo-6235010.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/chirurgie.png',
     imageAlt: 'Instrumentar chirurgical veterinar',
   },
   {
@@ -20,7 +20,7 @@ const services = [
     description:
       'Prevenție esențială prin vaccinări conform schemelor recomandate și înregistrare oficială în RECS.',
     image:
-      'https://images.pexels.com/photos/6235239/pexels-photo-6235239.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/vaccinare.png',
     imageAlt: 'Vaccinare câine la cabinet veterinar',
   },
   {
@@ -28,7 +28,7 @@ const services = [
     description:
       'Investigații de laborator rapide — hemogramă, biochimie, urină — pentru un diagnostic complet și corect.',
     image:
-      'https://images.pexels.com/photos/6234600/pexels-photo-6234600.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/analize.png',
     imageAlt: 'Analize de laborator veterinar',
   },
   {
@@ -36,7 +36,7 @@ const services = [
     description:
       'Medicamente cu și fără prescripție, suplimente, diete veterinare și produse antiparazitare de calitate.',
     image:
-      'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/farmacie.png',
     imageAlt: 'Produse farmacie veterinară',
   },
   {
@@ -44,7 +44,7 @@ const services = [
     description:
       'Echipă pregătită pentru situații de urgență, cu acces rapid la diagnostic și tratament în cazuri critice.',
     image:
-      'https://images.pexels.com/photos/7469207/pexels-photo-7469207.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
+      'public/urgente.png',
     imageAlt: 'Urgență veterinară câine',
   },
 ];
