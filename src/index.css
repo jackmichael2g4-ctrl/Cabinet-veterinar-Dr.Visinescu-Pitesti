@@ -21,6 +21,7 @@
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-xl: 20px;
+  --radius-pill: 9999px;
 }
 
 *, *::before, *::after {
@@ -107,5 +108,18 @@ body {
   .hero-ctas a {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* Contact section: two columns, stack on mobile */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }

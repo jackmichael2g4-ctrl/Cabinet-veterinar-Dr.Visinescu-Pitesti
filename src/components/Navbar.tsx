@@ -1,3 +1,5 @@
+import { contact } from '../data/contact';
+
 export default function Navbar() {
   return (
     <header
@@ -44,7 +46,7 @@ export default function Navbar() {
           <div>
             <div
               style={{
-                fontSize: '15px',
+                fontSize: '18px',
                 fontWeight: 700,
                 color: 'var(--color-text)',
                 lineHeight: '1.2',
@@ -54,7 +56,7 @@ export default function Navbar() {
             </div>
             <div
               style={{
-                fontSize: '11px',
+                fontSize: '12px',
                 fontWeight: 500,
                 color: 'var(--color-primary)',
                 letterSpacing: '0.04em',
@@ -109,13 +111,13 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="tel:+40000000000"
+          href={contact.phoneHref}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
             padding: '10px 20px',
-            borderRadius: 'var(--radius-sm)',
+            borderRadius: 'var(--radius-pill)',
             backgroundColor: 'var(--color-primary)',
             color: 'var(--color-white)',
             fontSize: '14px',
