@@ -17,7 +17,7 @@ export default function CTA() {
             position: 'relative',
             backgroundColor: 'var(--color-primary)',
             borderRadius: 'var(--radius-xl)',
-            padding: '72px 48px',
+            padding: '56px 48px',
             textAlign: 'center',
             overflow: 'hidden',
           }}
@@ -32,7 +32,7 @@ export default function CTA() {
               bottom: '-20px',
               width: '280px',
               height: '280px',
-              opacity: 0.07,
+              opacity: 0.04,
               pointerEvents: 'none',
               color: '#ffffff',
             }}
@@ -59,7 +59,7 @@ export default function CTA() {
               top: '-30px',
               width: '180px',
               height: '180px',
-              opacity: 0.05,
+              opacity: 0.03,
               pointerEvents: 'none',
               color: '#ffffff',
             }}
@@ -73,19 +73,32 @@ export default function CTA() {
 
           {/* Content */}
           <div style={{ position: 'relative', zIndex: 1 }}>
+            {/* Eyebrow label */}
+            <span
+              style={{
+                display: 'inline-block',
+                fontSize: '12px',
+                fontWeight: 600,
+                letterSpacing: '0.14em',
+                textTransform: 'uppercase',
+                color: 'rgba(77,217,217,0.85)',
+                marginBottom: '12px',
+              }}
+            >
+              Programări
+            </span>
+
             <h2
               style={{
-                fontSize: 'clamp(26px, 4vw, 40px)',
+                fontSize: 'clamp(26px, 4vw, 38px)',
                 fontWeight: 800,
                 color: '#ffffff',
                 letterSpacing: '-0.02em',
                 lineHeight: 1.15,
-                marginBottom: '16px',
-                maxWidth: '640px',
-                margin: '0 auto 16px',
+                marginBottom: '14px',
               }}
             >
-              Programează o consultație pentru animalul tău
+              Programează o consultație
             </h2>
 
             <p
@@ -93,13 +106,12 @@ export default function CTA() {
                 fontSize: '16px',
                 color: 'rgba(255,255,255,0.72)',
                 lineHeight: 1.65,
-                maxWidth: '500px',
-                margin: '0 auto 40px',
+                maxWidth: '560px',
+                margin: '0 auto 32px',
               }}
             >
-              Suntem aici pentru a oferi îngrijire profesionistă și răspunsuri
-              rapide. Contactează-ne pentru o programare sau pentru orice
-              întrebare.
+              Contactează-ne pentru o programare, o urgență sau dacă ai
+              întrebări despre sănătatea animalului tău.
             </p>
 
             {/* Buttons */}
@@ -192,6 +204,18 @@ export default function CTA() {
                 Trimite email
               </a>
             </div>
+
+            {/* Trust line */}
+            <p
+              style={{
+                marginTop: '22px',
+                fontSize: '13px',
+                color: 'rgba(255,255,255,0.55)',
+                lineHeight: 1.6,
+              }}
+            >
+              Programări rapide • Răspundem în aceeași zi lucrătoare
+            </p>
           </div>
         </div>
       </div>
