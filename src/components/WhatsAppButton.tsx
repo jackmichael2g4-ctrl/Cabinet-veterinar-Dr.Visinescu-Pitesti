@@ -3,8 +3,8 @@ import { contact } from '../data/contact';
 function WhatsAppIcon() {
   return (
     <svg
-      width="20"
-      height="20"
+      width="22"
+      height="22"
       viewBox="0 0 24 24"
       fill="currentColor"
       aria-hidden="true"
@@ -14,19 +14,56 @@ function WhatsAppIcon() {
   );
 }
 
+function PhoneIcon() {
+  return (
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+    </svg>
+  );
+}
+
 export default function WhatsAppButton() {
   return (
-    <a
-      href={contact.whatsappHref}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Scrie-ne pe WhatsApp"
-      className="whatsapp-float"
-    >
-      <span className="whatsapp-float__icon" aria-hidden="true">
-        <WhatsAppIcon />
-      </span>
-      <span className="whatsapp-float__label">Scrie-ne pe WhatsApp</span>
-    </a>
+    <>
+      {/* Mobile: dual floating buttons */}
+      <div className="float-actions-mobile" aria-label="Acțiuni rapide contact">
+        <a
+          href={contact.phoneHref}
+          aria-label={`Sună-ne: ${contact.phone}`}
+          className="float-action-btn float-action-btn--phone"
+        >
+          <PhoneIcon />
+        </a>
+        <a
+          href={contact.whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Scrie-ne pe WhatsApp"
+          className="float-action-btn float-action-btn--whatsapp"
+        >
+          <WhatsAppIcon />
+        </a>
+      </div>
+
+      {/* Desktop: pill WhatsApp button */}
+      <a
+        href={contact.whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Scrie-ne pe WhatsApp"
+        className="whatsapp-float"
+      >
+        <span className="whatsapp-float__icon" aria-hidden="true">
+          <WhatsAppIcon />
+        </span>
+        <span className="whatsapp-float__label">Scrie-ne pe WhatsApp</span>
+      </a>
+    </>
   );
 }
