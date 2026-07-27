@@ -79,16 +79,7 @@ export default function CTA() {
           >
             Contact
           </span>
-          <h2
-            style={{
-              fontSize: 'clamp(28px, 4vw, 40px)',
-              fontWeight: 800,
-              color: 'var(--color-text)',
-              letterSpacing: '-0.02em',
-              lineHeight: 1.15,
-              marginBottom: '12px',
-            }}
-          >
+          <h2 className="section-title" style={{ marginBottom: '12px' }}>
             Programează o consultație
           </h2>
           <p

@@ -75,16 +75,7 @@ export default function Services() {
           >
             Ce oferim
           </span>
-          <h2
-            style={{
-              fontSize: 'clamp(28px, 4vw, 40px)',
-              fontWeight: 800,
-              color: 'var(--color-text)',
-              letterSpacing: '-0.02em',
-              lineHeight: 1.15,
-              marginBottom: '16px',
-            }}
-          >
+          <h2 className="section-title">
             Serviciile noastre
           </h2>
           <p
@@ -155,6 +146,7 @@ function ServiceCard({ title, description, image, imageAlt }: ServiceCardProps) 
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            objectPosition: 'center 20%',
             transition: 'transform 0.35s ease',
           }}
           onMouseEnter={(e) => { (e.currentTarget as HTMLImageElement).style.transform = 'scale(1.04)'; }}

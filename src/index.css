@@ -111,6 +111,19 @@ body {
   }
 }
 
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e4240 5%, #007a78 50%, #1e4240 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
 /* Contact section: two columns, stack on mobile */
 .contact-grid {
   display: grid;

@@ -2,6 +2,7 @@ export const contact = {
   address: 'Strada Râurilor 7, 110036 Pitești',
   phone: '0722 381 040',
   phoneHref: 'tel:+40722381040',
+  whatsappHref: 'https://wa.me/40745534944',
   email: 'visinescu.amivet@yahoo.com',
   emailHref: 'mailto:visinescu.amivet@yahoo.com',
   facebook: 'https://www.facebook.com/ionelvisinescu/?locale=ro_RO',

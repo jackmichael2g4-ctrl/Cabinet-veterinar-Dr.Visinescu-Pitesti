@@ -64,16 +64,7 @@ export default function FAQ() {
           >
             Suport
           </span>
-          <h2
-            style={{
-              fontSize: 'clamp(28px, 4vw, 40px)',
-              fontWeight: 800,
-              color: 'var(--color-text)',
-              letterSpacing: '-0.02em',
-              lineHeight: 1.15,
-              marginBottom: '16px',
-            }}
-          >
+          <h2 className="section-title">
             Întrebări frecvente
           </h2>
           <p
