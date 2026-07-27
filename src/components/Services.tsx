@@ -3,48 +3,42 @@ const services = [
     title: 'Consultații & Diagnostic',
     description:
       'Evaluare generală completă, diagnostic clinic precis și planuri de tratament personalizate pentru animalul tău.',
-    image:
-      'public/consultatii_diagnostic.png',
+    image: `${import.meta.env.BASE_URL}consultatii_diagnostic.png`,
     imageAlt: 'Medic veterinar consultând un câine',
   },
   {
     title: 'Chirurgie & Stomatologie',
     description:
       'Intervenții chirurgicale de la sterilizări de rutină la proceduri complexe, realizate în condiții optime.',
-    image:
-      'public/chirurgie.png',
+    image: `${import.meta.env.BASE_URL}chirurgie.png`,
     imageAlt: 'Instrumentar chirurgical veterinar',
   },
   {
     title: 'Vaccinări & Microcipări',
     description:
       'Prevenție esențială prin vaccinări conform schemelor recomandate și înregistrare oficială în RECS.',
-    image:
-      'public/vaccinari.png',
+    image: `${import.meta.env.BASE_URL}vaccinari.png`,
     imageAlt: 'Vaccinare câine la cabinet veterinar',
   },
   {
     title: 'Analize & Laborator',
     description:
       'Investigații de laborator rapide — hemogramă, biochimie, urină — pentru un diagnostic complet și corect.',
-    image:
-      'public/analize.png',
+    image: `${import.meta.env.BASE_URL}analize.png`,
     imageAlt: 'Analize de laborator veterinar',
   },
   {
     title: 'Farmacie Veterinară',
     description:
       'Medicamente cu și fără prescripție, suplimente, diete veterinare și produse antiparazitare de calitate.',
-    image:
-      'public/farmacie.png',
+    image: `${import.meta.env.BASE_URL}farmacie.png`,
     imageAlt: 'Produse farmacie veterinară',
   },
   {
     title: 'Urgențe Veterinare',
     description:
       'Echipă pregătită pentru situații de urgență, cu acces rapid la diagnostic și tratament în cazuri critice.',
-    image:
-      'public/urgente.png',
+    image: `${import.meta.env.BASE_URL}urgente.png`,
     imageAlt: 'Urgență veterinară câine',
   },
 ];
@@ -142,6 +136,8 @@ function ServiceCard({ title, description, image, imageAlt }: ServiceCardProps) 
         <img
           src={image}
           alt={imageAlt}
+          loading="lazy"
+          decoding="async"
           style={{
             width: '100%',
             height: '100%',
