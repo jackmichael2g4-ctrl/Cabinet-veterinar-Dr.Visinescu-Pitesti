@@ -21,31 +21,12 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Scrie-ne pe WhatsApp"
-      className={[
-        'fixed z-40 flex items-center gap-2.5',
-        'min-h-11 min-w-11',
-        'rounded-[var(--radius-pill)] bg-white',
-        'border border-[var(--color-border)]',
-        'pl-1.5 pr-5 py-1.5',
-        'text-[13px] font-semibold text-[var(--color-text)]',
-        'no-underline',
-        'shadow-[0_4px_14px_rgba(15,23,42,0.08),0_2px_6px_rgba(15,23,42,0.04)]',
-        'transition-[transform,box-shadow] duration-250 ease-out',
-        'hover:-translate-y-0.5',
-        'hover:shadow-[0_8px_24px_rgba(15,23,42,0.12),0_4px_10px_rgba(15,23,42,0.06)]',
-        'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]',
-        'right-[max(18px,env(safe-area-inset-right))] bottom-[max(18px,env(safe-area-inset-bottom))]',
-        'sm:gap-3 sm:pl-6 sm:pr-5 sm:py-2 sm:text-sm',
-        'sm:right-[max(28px,env(safe-area-inset-right))] sm:bottom-[max(28px,env(safe-area-inset-bottom))]',
-      ].join(' ')}
+      className="whatsapp-float"
     >
-      <span
-        className="flex shrink-0 items-center justify-center size-9 rounded-full bg-[#25D366] text-white sm:size-10"
-        aria-hidden="true"
-      >
+      <span className="whatsapp-float__icon" aria-hidden="true">
         <WhatsAppIcon />
       </span>
-      <span className="whitespace-nowrap">Scrie-ne pe WhatsApp</span>
+      <span className="whatsapp-float__label">Scrie-ne pe WhatsApp</span>
     </a>
   );
 }
