@@ -175,31 +175,9 @@ export default function CTA() {
               ))}
             </ul>
 
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: 'auto' }}>
-              <a
-                href={contact.phoneHref}
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  padding: '14px 28px',
-                  borderRadius: 'var(--radius-pill)',
-                  backgroundColor: 'var(--color-primary)',
-                  color: '#ffffff',
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  textDecoration: 'none',
-                  transition: 'background-color 0.15s ease',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--color-primary-hover)';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--color-primary)';
-                }}
-              >
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+            <div className="contact-cta-row">
+              <a href={contact.phoneHref} className="contact-cta-btn contact-cta-btn--primary">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
                     d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
                     fill="currentColor"
@@ -208,35 +186,8 @@ export default function CTA() {
                 Sună acum
               </a>
 
-              <a
-                href={contact.emailHref}
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  padding: '14px 28px',
-                  borderRadius: 'var(--radius-pill)',
-                  backgroundColor: 'transparent',
-                  border: '1.5px solid var(--color-primary)',
-                  color: 'var(--color-primary)',
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  textDecoration: 'none',
-                  transition: 'background-color 0.15s ease, color 0.15s ease',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.backgroundColor = 'var(--color-primary)';
-                  el.style.color = '#ffffff';
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.backgroundColor = 'transparent';
-                  el.style.color = 'var(--color-primary)';
-                }}
-              >
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+              <a href={contact.emailHref} className="contact-cta-btn contact-cta-btn--outline">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
                     d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
                     stroke="currentColor"

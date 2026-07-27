@@ -163,6 +163,11 @@ export default function TrustMarquee() {
         .trust-track {
           animation: trust-scroll 42s linear infinite;
         }
+        @media (max-width: 639px) {
+          .trust-track {
+            animation-duration: 18s;
+          }
+        }
         .trust-marquee-root:hover .trust-track {
           animation-play-state: paused;
         }
